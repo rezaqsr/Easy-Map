@@ -1,8 +1,8 @@
 <?php
 /**
- * Easy Map
+ * Easy Map Elementor
  *
- * Plugin Name: Easy map
+ * Plugin Name: Easy map Elementor
  * Plugin URI:  https://github.com/rezaqsr/easy-map
  * Description: Map For Elementor Page Builder
  * Version:     1.0.0
@@ -10,7 +10,7 @@
  * Author URI:  https://github.com/rezaqsr
  * License:     GPLv2 or later
  * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * Text Domain: hasht.net
+ * Text Domain: https://github.com/rezaqsr
  * Domain Path: /languages
  * Requires at least: 6.0
  * Requires PHP: 8.1
@@ -22,6 +22,9 @@
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
+
+
+if ( ! defined( 'ABSPATH' ) ) exit;
 const version = '1.0.0';
 define( "plugin_url", plugin_dir_url( __FILE__ ) );
 

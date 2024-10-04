@@ -1,5 +1,5 @@
-# Easy Map Elementor Widget
-The **Easy Map** Elementor widget allows users to easily add custom locations on a map by entering latitude and longitude or selecting a point directly on the map. Perfect for showcasing specific places or areas of interest on your site.
+# Easy Map Elementor
+The **Easy Map Elementor** allows users to easily add custom locations on a map by entering latitude and longitude or selecting a point directly on the map. Perfect for showcasing specific places or areas of interest on your site.
 
 ---
 
@@ -12,9 +12,9 @@ The **Easy Map** Elementor widget allows users to easily add custom locations on
 ## Installation
 1. Upload the plugin folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Use the Elementor editor to add the **Easy Map** widget to your page.
+3. Use the Elementor editor to add the **Easy Map Elementor** widget to your page.
 
 ---
 
 ## Changelog
-- **1.0** - Initial release.
+- **1.0.0** - Initial release.
