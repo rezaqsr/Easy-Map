@@ -1,5 +1,5 @@
 <?php
-class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
+class EMFE_Widget extends \Elementor\Widget_Base
 {
 
     public function get_name(): string
@@ -9,7 +9,7 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
 
     public function get_title(): ?string
     {
-        return __('Easy Map', 'easy-map-elementor');
+        return __('Easy Map', 'easy-map-for-elementor');
     }
 
     public function get_icon(): string
@@ -27,14 +27,14 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
         $this->start_controls_section(
             'map_settings',
             [
-                'label' => __('Map Settings', 'easy-map-elementor'),
+                'label' => __('Map Settings', 'easy-map-for-elementor'),
             ]
         );
 
         $this->add_control(
             'lat',
             [
-                'label' => __('Latitude', 'easy-map-elementor'),
+                'label' => __('Latitude', 'easy-map-for-elementor'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => '35.6895', // Default value for Tehran
             ]
@@ -43,7 +43,7 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'long',
             [
-                'label' => __('Longitude', 'easy-map-elementor'),
+                'label' => __('Longitude', 'easy-map-for-elementor'),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'default' => '51.3890', // Default value for Tehran
             ]
@@ -52,7 +52,7 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'zoom',
             [
-                'label' => __('Zoom Level', 'easy-map-elementor'),
+                'label' => __('Zoom Level', 'easy-map-for-elementor'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 10,
             ]
@@ -60,7 +60,7 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'width',
             [
-                'label' => __('Width', 'easy-map-elementor'),
+                'label' => __('Width', 'easy-map-for-elementor'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 100,
             ]
@@ -68,7 +68,7 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'height',
             [
-                'label' => __('Height', 'easy-map-elementor'),
+                'label' => __('Height', 'easy-map-for-elementor'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 100,
             ]
@@ -76,7 +76,7 @@ class Elementor_Easy_Map_Widget extends \Elementor\Widget_Base
         $this->add_control(
             'radius',
             [
-                'label' => __('Radius', 'easy-map-elementor'),
+                'label' => __('Radius', 'easy-map-for-elementor'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
                 'default' => 0,
             ]

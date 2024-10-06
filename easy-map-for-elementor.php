@@ -1,8 +1,8 @@
 <?php
 /**
- * Easy Map Elementor
+ * Easy Map For Elementor
  *
- * Plugin Name: Easy map Elementor
+ * Plugin Name: Easy map for Elementor
  * Plugin URI:  https://github.com/rezaqsr/easy-map
  * Description: Map For Elementor Page Builder
  * Version:     1.0.0
@@ -25,14 +25,14 @@
 
 
 if ( ! defined( 'ABSPATH' ) ) exit;
-const version = '1.0.0';
-define( "plugin_url", plugin_dir_url( __FILE__ ) );
+const emfe_version = '1.0.0';
+define( "emfe_plugin_url", plugin_dir_url( __FILE__ ) );
 
 include_once plugin_dir_path( __FILE__ ) . 'inc/queue.php';
 
-function register_easy_map_widget( $widgets_manager ): void
+function emfe_widget( $widgets_manager ): void
 {
     require_once( plugin_dir_path( __FILE__ ) . 'class/widget.php' );
-    $widgets_manager->register( new \Elementor_Easy_Map_Widget() );
+    $widgets_manager->register( new \EMFE_Widget() );
 }
-add_action( 'elementor/widgets/register', 'register_easy_map_widget' );
+add_action( 'elementor/widgets/register', 'emfe_widget' );
